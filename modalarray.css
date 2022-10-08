@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pink-color:#DE3163;
+    --bg-color: white;
+    --grey-color: #E5E7E9 ;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(120deg,rgba(100, 149, 237,0.8),rgba(155, 89, 182, 0.8 ) )
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.open_modal {
+    padding: 20px 30px;
+    border: none;
+    background-color: var(--pink-color);
+    color: var(--bg-color);
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.open_modal:hover {
+    border: var(--bg-color) solid 5px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.modal_box {
+    width: 600px;
+    position: relative;
+    top:8%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    background-color: var(--bg-color);
+}
+/* --- modal header */
+.modal_header {
+    width: 100%;
+    padding: 5px 15px;
+    color: var(--bg-color);
+    background-color: var(--pink-color);
+}
+.modal_header p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal_header i {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+/* --- modal body--- */
+.modal_lesson {
+    margin-top: 5px;
+}
+.border {
+    border: var(--pink-color) solid 2px;
+    border-radius: 10px;
+}
+.input_css {
+    border: none;
+    font-size: 15px;
+    color: var(--pink-color);
+    padding: 5px;
+}
+.modal_title {
+    width: 40%;
+    padding: 5px 15px;
+}
+.modal_title span {
+    color: var(--pink-color);
+    font-weight: bold;
+}
+.modal_button {
+    width: 15%;
+    padding: 5px 15px;
+}
+.modal_button button {
+    padding: 5px 20px;
+    background-color: var(--pink-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+}
+.modal_button button:hover {
+    scale: 1.5;
+}
+.modal_result {
+    width: 45%;
+    padding: 5px 15px;
+    border: var(--grey-color) solid 2px ;
+    min-height: 30px;
+    margin-right: 15px;
+}

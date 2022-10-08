@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Array</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./modalarray.css">
+</head>
+<body>
+    <button class="open_modal">Open Modal Exercises</button>
+    <div class="modal hidden">
+        <div class="modal_box">
+            <div class="modal_header flex_row">
+                <p>Master Array Method</p>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+          
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p>Input:</p>
+                    <p><input type="text" id="input"
+                        class="input_css" placeholder="input integer number ...">
+                    </p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="exportArr ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="exportArr"></p>
+                </div>
+            </div>
+
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 1: </span>get Sum</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="getSum ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="getSum"></p>
+                </div>
+            </div>
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 2: </span>get Max</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="getMax ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="getMax"></p>
+                </div>
+            </div>
+       
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 3: </span>min & index</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="index_min ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="index_min"></p>
+                </div>
+            </div>
+
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 4: </span>average</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="average ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="average"></p>
+                </div>
+            </div>
+       
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 5: </span>square number</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="count ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="count"></p>
+                </div>
+            </div>
+  
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 6: </span>check & replace</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="check_replace ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="check"></p>
+                    <p id="replace"></p>
+                </div>
+            </div>
+    
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 7: </span>Look up K</p>
+                    <p><input type="text" id="K"
+                        class="input_css" placeholder="input K ...">
+                    </p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="looK ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="looK"></p>
+                </div>
+            </div>
+       
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 8: </span>original & reverse</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="reverse ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="original"></p>
+                    <p id="reverse"></p>
+                </div>
+            </div>
+       
+            <div class="modal_lesson flex_row">
+                <div class="modal_title">
+                    <p><span>Exercise 9: </span>decreaseOrder</p>
+                </div>
+                <div class="modal_button">
+                    <button onclick="decreaseOrder ()"><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="modal_result">
+                    <p id="decreaseOrder"></p>
+                </div>
+            </div>
+  
+    </div> <!--modal-->
+    <script src="./modalarray.js"></script>
+</body>
+</html>
